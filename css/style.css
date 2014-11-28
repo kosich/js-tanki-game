@@ -1,0 +1,33 @@
+body{
+	background-color: #444;	
+}
+
+#canvas_container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	height:200px;
+	width:200px;
+	margin:-100px 0 0 -100px;	
+	box-shadow: 0 0 5px #111;
+	overflow:hidden;
+}
+#canvas_container > canvas{
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+
+/*debug version*/
+#debug #canvas_container{
+	position: static;
+	height:auto;
+	width:auto;
+	overflow:visible;
+	margin:0;
+}
+#debug #canvas_container > canvas{
+	position:static;
+	outline: red 1px dashed;
+}

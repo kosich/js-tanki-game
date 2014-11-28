@@ -1,0 +1,30 @@
+
+//наследование функций?
+
+BO{
+	Rectangle,
+}	
+	
+Tank : Movable{
+	-Shoot1,
+	-Shoot2
+}
+
+Movable: BO {
+	-Turn,
+	-Move
+}
+
+Bullet : Movable {
+	-Explode
+}
+
+
+Map : Rectangle {
+	
+}
+	
+Rectangle{
+	x,y,w,h
+}
+	

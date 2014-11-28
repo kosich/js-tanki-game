@@ -1,0 +1,66 @@
+<!DOCTYPE  html>
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" lang="ru-Ru" />
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!--game objects
+			
+			-->
+		<script src="js/utils.js" type="application/javascript" charset="UTF-8"></script>
+		<script src="js/go.js" type="application/javascript" charset="UTF-8"></script>
+		
+		<!--map & stuff
+			-->
+		<script src="js/map.js"  type="application/javascript" charset="UTF-8"></script>
+		
+		<!--tank -->
+		<script src="js/tank.js" type="application/javascript" charset="UTF-8"></script>
+		<script src="js/game.js" type="application/javascript" charset="UTF-8"></script>
+		<script src="js/AI.js" type="application/javascript" charset="UTF-8"></script>
+		<script src="js/maps.js" type="application/javascript" charset="UTF-8"></script>
+		
+		<style type="text/css">/*temp styles*/
+			#controls_container{
+				position:absolute;
+				padding:1em;	
+				bottom:0px;
+				left:0px;
+				outline:1px solid #333;
+				background-color: #aaa;
+			}
+			#controls_container > a{
+				display: block;
+				color:#111111;
+			}
+			.display_overlayed{
+				display:inline-block;
+				position: relative;
+				z-index:1;
+				background-color:white;
+				font-size:10px;
+				font-family:Arial, Helvetica, sans-serif;
+				padding:2px;
+				opacity: 0.4;
+				min-width: 30px;
+			}
+		</style>
+		
+		<title>TANKS</title>
+	</head>
+	<body>
+		<div id="canvas_container">
+			<span id='fps_display' class="display_overlayed">fps will be shown here</span>
+			
+						
+		</div>
+		<div id="controls_container">
+			<a href='#' onclick="game.turnDebug();false">debug</a>
+			<a href='#' onclick="(document.getElementById('canvas_container')).style.webkitTransform = 'scale(3,3)';false">zoom in</a>	
+		</div>
+		
+	</body>
+</html>
+
